@@ -3,11 +3,9 @@ import random
 
 #обьявляю метод для вывода списка в обратном порядке
 def reversPrint(revList):
-    if(type(revList) != list): return print("Entered object, not list")
-    i = len(revList) - 1
-    while i > 0:
-        print(revList[i], end=" ")
-        i -= 1
+        #использование for в обратном порядке с использованием range(start, stop, step)
+    for n in range(len(revList)-1, 0, -1):
+        print(revList[n], end=" ")
 
 #создаю массив который будет заполнен введенными данными
 NumList = []
